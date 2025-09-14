@@ -1,0 +1,299 @@
+@import url("./Home.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+:root{
+    --primary-color:RGB(0, 0, 0);
+    --secondary-color:RGB(113, 113, 130);
+}
+body{
+    width: 100%;
+    overflow-x: none;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 190px;
+    background: linear-gradient(rgba(245, 242, 242, 0.34),rgb(241, 240, 240),rgb(255, 255, 255),white,white,rgba(255, 254, 254, 0.755));
+}
+.about h2.show{
+font-size: 42px;
+line-height: 42px;
+font-weight: 400;
+padding-top: 10px;
+margin-bottom: 30px;
+animation-name: bu;
+opacity: 0;
+animation-duration: 1s;
+animation-timing-function: ease;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+
+}
+.about .abp.show{
+    display: wrap;
+    margin: 0 165px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    animation-name: bu;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    text-align: center;
+
+}
+.about .head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+@keyframes lr{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    70%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.center .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    
+}
+.center .left p:nth-child(1).show{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation-name: lr;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    
+}
+.center .left p:nth-child(2).show{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(0, 0, 0);
+    margin-bottom: 30px;
+    opacity: 0;
+    animation-name: lr;
+    animation-delay: 0.2s;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.center .left h3.show{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: rgb(32, 23, 23);
+    text-shadow: 1px 1px 15px rgba(38, 38, 38, 0.345);
+    opacity: 0;
+    animation-name: lr;
+    animation-delay: 0.4s;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes lu{
+    0%{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    75%{
+        opacity: 0.5;
+        transform: scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.center .left .skills.show{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    opacity: 0;
+    animation-name: lr;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  
+}
+.center .left .skills span.show{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: rgb(1.176% 0.784% 7.451%);
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: rgba(191, 178, 178, 0.226);
+   animation-name: lu;
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
+}
+.center .left .skills span:hover{
+    background-color: rgba(113, 108, 108, 0.384);
+    scale: 1.04;
+    transition: all 0.3s linear;
+}
+
+.center .right{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 25px;
+    row-gap: 30px;
+    
+
+}
+@keyframes rl{
+    0%{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    70%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.center .right .indi.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    opacity: 0;
+    animation-name: rl;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+@keyframes icon{
+    0%{
+        transform: scale(1.02);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.12);
+    }
+}
+
+.center .right .indi:hover .single .logo{
+    animation-name: icon;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+.center .right .indic:hover{
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(-8px);
+    
+}
+.center .right .indi .single{
+    margin: 30px 25px ;
+}
+.center .right .indi .logo{
+    display: inline-block;
+    background-color: rgba(214, 208, 208, 0.53);
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+.center .right .indi .single h4{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgb(3.939% 3.939% 3.939%);
+    margin-bottom: 10px;
+}
+.center .right .indi .single p{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    display: wrap;
+}
+
+.center .right .indi .logo svg{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-items: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    
+}

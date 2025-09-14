@@ -1,0 +1,344 @@
+@import url("./Home.css");
+@import url("./about.css");
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 190px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.48),white,white,white,white, rgb(255, 255, 255));
+}
+.skill .headtop{
+    width: 100%;
+    color: black;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.skill .headtop h2.show{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 14px;
+    text-align: center;
+    animation-name: bu;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.skill .headtop p.show{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0 250px;
+    animation-name: bu;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+
+
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.contain .left.show{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(213, 198, 198, 0.599);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.176);
+    padding-bottom: 30px;
+    opacity: 0;
+    animation-name: lr;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 0.2s;
+}
+.contain .left:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.209);
+}
+.skill .contain .left .he{
+    display: flex;
+    align-self: start;
+    width: 100%;
+    height: 100%;
+    padding: 21px 21px 12px 21px;
+}
+@keyframes rlr{
+    0%{
+        rotate: 30deg;
+    }
+    25%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: -30deg;
+    }
+    75%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 30deg;
+    }
+}
+.skill .contain .left .he span{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    animation-name: rlr;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.skill .contain .left .he h4{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.skill .contain .left .container{
+    padding:  0 21px 21px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    column-gap: 30px;
+}
+.skill .contain .left .container .skillcontain{
+
+    width: 100%;
+}
+.skill .contain .left .container .skillcontain .txt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px 10px 0;
+    margin-bottom: 6px;
+}
+.skill .contain .left .container .skillcontain .txt span:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: rgb(3.939% 3.939% 3.939%);
+}
+.skill .contain .left .container .skillcontain .txt span:nth-child(2){
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--secondary-color);
+}
+.skill .contain .left .container .skillcontain .progress{
+    width: 100%;
+    height: 12px;
+    background-color: rgba(187, 186, 186, 0.426);
+    border-radius: 10px;
+}
+.skill .contain .left .container .skillcontain .progress .rising{
+    width: 0;
+    height: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: width 0.2s ease-out;
+}
+.skill .contain .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+}
+.skill .contain .right .top.show{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(180, 171, 171, 0.653);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.176);
+    margin-bottom: 28px;
+    padding: 10px;  
+    width: 100%;
+    opacity: 0;
+    animation-name: rl;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
+.skill .contain .right .top:hover{
+     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.209);
+}
+.skill .contain .right .top .toolshead{
+    width: 100%;
+    display: flex;
+    align-content: start;
+    gap: 15px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+@keyframes uppd{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+.skill .contain .right .top .toolshead span{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    animation-name: uppd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+}
+.skill .contain .right .top .toolshead h4{
+    justify-content: center;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.skill .contain .right .top .tools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px 25px 10px;
+}
+.skill .contain .right .top .tools span{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 6px 12px;
+    border-radius: 7px;
+    border: 1px solid rgba(139, 129, 129, 0.572);
+    color: rgb(3.939% 3.939% 3.939%);
+    animation-name: lu;
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
+    
+
+}
+.skill .contain .right .top .tools span:hover{
+    background-color: rgba(172, 172, 172, 0.572);
+    scale: 1.09;
+    transition: all 0.3s linear;
+    
+}
+.skill .contain .right .bottom.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid rgba(180, 171, 171, 0.653);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.176);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    opacity: 0;
+    animation-name: rl;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1s;
+}
+.skill .contain .right .bottom:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.209);
+}
+.skill .contain .right .bottom .softhead{
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    gap: 0px;
+    width: auto ;
+    margin: 10px 0;
+    
+}
+.skill .contain .right .bottom .softhead span{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.skill .contain .right .bottom .softhead h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(3.939% 3.939% 3.939%);
+    justify-items: center;
+}
+.skill .contain .right .bottom .softcon{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    padding: 10px 10px 20px 10px;
+}
+.skill .contain .right .bottom .softcon span{
+    cursor: pointer;
+    position: relative;
+    padding-left: 18px;
+    justify-content: start;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    opacity: 0;
+    animation-name: lr;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+.skill .contain .right .bottom .softcon span::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.771),rgb(121, 121, 121));
+    left: 0;
+    top: 9px;
+    border-radius: 50%;
+
+}
+.skill .contain .right .bottom .softcon span:hover{
+     translate: 7px;
+    transition: all 0.5s ease-in-out;
+    
+}

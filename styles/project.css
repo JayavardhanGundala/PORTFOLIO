@@ -1,0 +1,406 @@
+@import url("./Home.css");
+a{
+    text-decoration: none;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 160px;
+    border: transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0.951),rgb(255, 255, 255),white);
+}
+.projects .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+.projects .head .h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes ro{
+    0%{
+        opacity: 1;
+        transform: rotate(-90deg);
+        color: white;
+        background-color: black;
+        filter: blur(3px);
+ 
+        
+    }
+    25%{
+         transform: skew(30deg);
+         color: white;
+        background-color: black;
+         filter: blur(2px);
+    }
+    50%{
+        transform: rotateX(360deg);
+        opacity: 1;
+        color: rgb(109, 99, 99);
+        background-color: black;
+         filter: blur(1.5px);
+      
+
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: 1;
+         filter: blur(1px);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+.projects .head .h.show{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(14, 14, 15);
+    padding: 12px 23px;
+    border:none;
+    box-shadow: 1px 1px 5px rgb(90, 87, 87);
+    background: linear-gradient(to right,rgba(96, 90, 90, 0.462),white);
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px white;
+    animation-name: ro;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    
+    opacity: 1;
+
+} 
+.projects .head .m.show{
+    font-size: 43px;
+    line-height: 63px;
+    font-weight: 500;
+    color: rgb(54, 49, 49);
+    width: 400px;
+    text-align: center;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.15s;
+}
+.projects .head .m span{
+    text-align: center;
+    font-style:bold;
+    font-weight: 500;
+    color: rgb(92, 86, 86);
+    text-shadow: 1px 1px 3px rgba(116, 111, 111, 0.485);
+    
+}
+.projects .head p.show{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    width: 850px;
+    text-align: center;
+    text-shadow: 1px 1px 5px white;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.20s;
+}
+.projects .tbut.show{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px rgb(185, 175, 175);
+    margin-bottom: 30px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.25s;
+
+}
+.projects .tbut button{
+ padding: 6px 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 15px;
+ line-height: 18px;
+ font-weight: 500;
+ color: rgb(0, 0, 0);
+ background-color: white;
+ gap: 8px;
+ border: none;
+ border-radius: 10px;
+ padding: 6px 10px;
+}
+.projects .tbut button svg{
+    width: 20px;
+    height: 20px;
+
+}
+.projects .tbut button.active{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+.projects .container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+@keyframes io{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.projects .container .project.show{
+    border: none;
+    box-shadow: 1px 1px 5px rgba(121, 116, 116, 0.764);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: io;
+    animation-duration: 1.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay:0.3s ;
+}
+.projects .container .project:hover{
+    translate: 0 -15px;
+   transition: all 0.5s ease ;
+}
+.projects .container .project .up{
+    
+    width: 100%;
+    height: 220px;
+    border: none;
+}
+.projects .container .project .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.projects .container .project .down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 25px 10px 10px 20px;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 40px;
+    
+}
+.projects .container .project .down h4{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    
+}
+.projects .container .project .down .tl{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:30px;
+}
+.projects .container .project .down .tl .t,
+.projects .container .project .down .tl .l{
+    display: flex;
+    gap: 10px;
+    color: var(--secondary-color);
+}
+.projects .container .project .down .tl .t svg,
+.projects .container .project .down .tl .l svg{
+    width: 20px;
+    height: 20px;
+    align-content: center;
+}
+.projects .container .project .down .tl .t p,
+.projects .container .project .down .tl .t p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.projects .container .project .down .conte{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: start;
+}
+.projects .container .project .down .consp{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(58, 55, 55);
+    
+}
+.projects .container .project .down .tech{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    
+}
+.projects .container .project .down .tech span{
+    border: 0.5px solid none;
+    padding: 1px 6px;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 600;
+    background-color: rgb(237, 236, 236);
+    border-radius: 5px;
+}
+
+.projects .container .project .down .links{
+    display: flex;
+    
+    gap: 30px;
+    position: relative;
+}
+.projects .container .project .down .links::before{
+    content: "";
+    position: absolute;
+    max-width: 250px;
+    min-width: 200px;
+    background-color: rgb(142, 132, 132);
+    height: 0.5px;
+    top: -15px;
+}
+.projects .container .project .down .links button{
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.projects .container .project .down .links button svg{
+    width: 20px;
+    height: 20px;
+}
+.projects .container .project .down .links button:hover{
+    scale: 1.15;
+    transition: all 0.3s ease;
+}
+.projects .end.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 120px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px  rgb(116, 110, 110);
+    width: 70%;
+    padding: 40px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.5s;
+    
+}
+.projects .end h3{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.projects .end p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    width: 600px;
+    text-align: center;
+    margin-top: 15px;
+}
+.projects .end .bttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.projects .end .bttn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 5px rgb(59, 57, 57);
+}
+.projects .end .bttn a{
+    text-decoration: none;
+}
+.projects .end .bttn button:hover{
+    scale: 1.09;
+    transition: all 0.5s ease;
+
+}
+.projects .end .bttn button svg{
+    width: 20px;
+    height: 20px;
+}
+.projects .end #bl{
+    background-color: black;
+    color: white;
+}
+.projects .end #wh{
+    background-color: white;
+    color: black;
+}
+
+

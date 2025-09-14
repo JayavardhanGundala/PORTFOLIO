@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+:root{
+    --primary-color:RGB(0, 0, 0);
+    --secondary-color:RGB(113, 113, 130);
+}
+body{
+    width: 100%;
+}
+.homepage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 80px;
+    margin-top: 80px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(252, 250, 250));
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0;
+
+}
+nav.scrolled{
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 3px 3px 15px rgba(12, 11, 11, 0.354);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav .name{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.769);
+    animation-fill-mode: forwards;
+    animation-name: start;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+    
+
+}
+@keyframes start{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav .name:hover{
+    transform: scale(1.07,1.07);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    
+}
+nav a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav a:hover{
+    color: black;
+}
+nav li{
+    font-size: 16px;
+    margin-right: 28px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    animation-name: start;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+nav li:nth-child(1){
+    
+    animation-delay: 0.10s;
+}
+nav li:nth-child(2){
+    
+    animation-delay: 0.25s;
+}
+nav li:nth-child(3){
+    
+    animation-delay: 0.40s;
+}
+nav li:nth-child(4){
+    animation-delay: 0.50s;
+}
+nav li:nth-child(5){
+    animation-delay: 0.60s;
+}
+nav li:nth-child(6){
+    animation-delay: 0.70s;
+}
+
+nav .resume{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 6px;
+    font-weight: 500;
+    animation: start 2s ease  1  normal;
+    
+    
+    
+}
+.resume .down{
+    color: white;
+}
+nav .resume:hover{
+    transform: scale(1.07);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+.resume a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    
+}
+.resume i{
+    display: inline-block;
+  font-size: 13px;
+  color: white;
+}
+@keyframes bu{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.7;
+
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}
+.middle{
+   
+    display: flex;
+    margin: 0 200px;
+    align-items: start;
+    gap: 15px;
+
+}
+.middle .left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.middle .left p:nth-child(1).show{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(3, 2, 19, 0.769);
+    margin-bottom: 14px;
+    margin-left: 8px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.10s;
+
+    
+
+}
+.middle .left h1.show{
+    font-size: 60px;
+    font-weight: 400;
+    color: black;
+    line-height: 63px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.30s;
+}
+.middle .left h2.show{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--secondary-color);
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.50s;
+
+}
+.middle .left p:last-of-type.show{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0.70s;
+}
+.middle .left .btns.show{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation-name: bu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 1.2s;
+
+}
+.middle .left .btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1.5px solid rgba(0, 0, 0, 0.187);
+    padding: 5px 14px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
+    
+}
+.middle .left .btns a:hover{
+    transform: scale(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+.middle .left .btns a .sv{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    padding-right: 5px;
+    
+    
+}
+.middle .left .btns a:nth-child(1){
+    color: white;
+    background-color: black;
+    
+}
+.middle .left .btns a:last-of-type{
+color: black;
+background-color: white;
+}
+.middle .right{
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+@keyframes cic{
+    0%{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    75%{
+        opacity: 0.5;
+        transform: scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.middle .right .circle{
+    position: relative;
+    border: 4px solid rgba(0, 0, 0, 0.244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;   
+    top: 30px;
+    left: 0px;
+    opacity: 0;
+    border-radius: 50%;
+    animation-name: cic;
+    animation-timing-function: linear;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    
+    
+}
+.middle .right .circle img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.middle .right .circle img:hover{
+    transform: scale(1.03);
+
+}
+.middle .right .circle .roundemoji{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    bottom: -15px;
+    right: 10px;
+    animation-name: rot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+.middle .right .circle .roundemoji span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+}
+.middle .right .up{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 0px;
+    left:-10px;
+    animation-name: downup;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear ;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.594);
+}
+.middle .right .down{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    bottom: 0;
+    left: -10px;
+    animation-name: updown;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.594);
+}
+@keyframes downup{
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
+@keyframes updown{
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+     100%{
+        transform: rotate(-45deg);
+    }
+    
+}
+.homepage .scdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: ud 3s linear infinite alternate-reverse;
+    color: var(--secondary-color);
+    
+}
+    
+
+.homepage .scdo .txt{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0;
+    animation: bu 1s ease 1.3s forwards;
+}
+.homepage .scdo .scrolldown{
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 400;
+    opacity: 0;
+    animation: bu 1s ease 1.5s forwards;
+   
+}
+.homepage .scdo:hover{
+    color: rgb(0, 0, 0);
+}
+@keyframes ud{
+    0%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
