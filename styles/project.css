@@ -404,3 +404,11 @@ a{
 }
 
 
+@media(max-width:1024px){
+    .projects{
+            padding: 70px 50px;
+    }
+    .projects .head{
+            gap: 15px;
+    }
+}

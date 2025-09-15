@@ -393,3 +393,8 @@ background-color: rgba(94, 88, 88, 0.16);
     top: 5px;
     justify-self: center;
 }
+@media(max-width:1024px){
+    .experience{
+        padding: 70px 50px;
+    }
+}

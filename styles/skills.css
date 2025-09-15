@@ -342,3 +342,24 @@
     transition: all 0.5s ease-in-out;
     
 }
+@media(max-width:1024px){
+    .skill{
+         padding: 70px 50px 50px;
+    }
+    .skill .headtop p.show{
+            margin: 0 180px;
+    }
+    .contain{
+            gap: 20px;
+    }
+    .skill .contain .right .top.show{
+            gap: 15px;
+            margin-bottom: 15px;
+    }
+    .skill .contain .right .top .tools{
+            padding: 0 8px 25px 5px;
+    }
+    .skill .contain .right .bottom .softcon{
+           padding: 5px 5px 5px 5px;
+    }
+}
