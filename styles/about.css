@@ -301,9 +301,6 @@ animation-fill-mode: forwards;
     .about{
             padding: 50px 50px;
     }
-    .about h2.show{
-        font-size: 40px;
-    }
     .about .abp.show{
             margin: 0 115px;
 

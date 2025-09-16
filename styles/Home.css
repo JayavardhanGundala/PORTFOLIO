@@ -498,18 +498,10 @@ background-color: white;
     width: 70%;
  }
  .middle .left p:nth-child(1).show{
-    font-size: 14px;
+
     margin-bottom: 12px;
  }
- .middle .left h1.show{
-     font-size: 48px;
- }
- .middle .left h2.show{
-        font-size: 24px;
- }
- .middle .left p:last-of-type.show{
-    font-size: 14px;
- }
+
  .middle .right .circle{
    width: 300px;
    height: 300px; 
