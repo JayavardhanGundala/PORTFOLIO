@@ -425,3 +425,8 @@
             padding: 70px 50px;
     }
 }
+@media (min-width: 1024px) and (max-width: 1440px){
+    .contact {
+            padding: 85px 80px;
+    }
+}

@@ -398,3 +398,8 @@ background-color: rgba(94, 88, 88, 0.16);
         padding: 70px 50px;
     }
 }
+@media (min-width: 1024px) and (max-width: 1440px){
+     .experience{
+        padding: 80px 85px;
+    }
+}

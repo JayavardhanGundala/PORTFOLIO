@@ -412,3 +412,8 @@ a{
             gap: 15px;
     }
 }
+@media (min-width: 1024px) and (max-width: 1440px){
+    .projects{
+            padding: 95px 80px;
+    }
+}

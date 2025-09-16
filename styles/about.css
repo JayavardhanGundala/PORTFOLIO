@@ -327,3 +327,15 @@ animation-fill-mode: forwards;
     }
             
 }
+@media (min-width: 1024px) and (max-width: 1440px){
+    .about{
+            padding: 85px;
+    }
+    .about .abp.show{
+            margin: 0 145px;
+
+    }
+    .center{
+        gap: 25px;
+    }
+}
