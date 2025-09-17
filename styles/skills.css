@@ -371,3 +371,15 @@
             margin: 0 220px;
     }
 }
+/*@media (min-width: 768px) and (max-width: 1024px){
+    .skill .headtop p.show{
+            margin: 0 10%;
+    }
+    .skill .contain{
+        flex-direction: column;
+    }
+    .skill .contain .right{
+        width: 100%;
+    }
+    
+}

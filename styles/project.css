@@ -111,7 +111,7 @@ a{
     line-height: 25px;
     font-weight: 400;
     color: var(--secondary-color);
-    width: 850px;
+    width:75%9;
     text-align: center;
     text-shadow: 1px 1px 5px white;
     opacity: 0;
@@ -337,7 +337,7 @@ a{
     border: 1px solid transparent;
     border-radius: 10px;
     box-shadow: 1px 1px 5px  rgb(116, 110, 110);
-    width: 70%;
+    width: 75%;
     padding: 40px;
     opacity: 0;
     animation-name: bu;
@@ -358,7 +358,7 @@ a{
     line-height: 25px;
     font-weight: 400;
     color: var(--secondary-color);
-    width: 600px;
+    width: 100%;
     text-align: center;
     margin-top: 15px;
 }
@@ -416,4 +416,20 @@ a{
     .projects{
             padding: 95px 80px;
     }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .projects .head p.show{
+         width: 100%;
+    }
+    .projects .end.show{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .end h3{
+        align-content: center;
+        text-align: center;
+    }
+    
 }

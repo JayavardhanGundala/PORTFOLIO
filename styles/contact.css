@@ -430,3 +430,15 @@
             padding: 85px 80px;
     }
 }
+@media (min-width: 768px) and (max-width: 1024px){
+    .contact .head .chp.show{
+        margin: 0 10%;
+    }
+    .contact .center{
+        flex-direction: column;
+    }
+    .contact .center .left{
+        width: 100%;
+    }
+    
+}

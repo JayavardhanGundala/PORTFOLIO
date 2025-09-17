@@ -11,6 +11,7 @@
 }
 body{
     width: 100%;
+    margin: 0;
 }
 .homepage{
     height: 100%;
@@ -23,7 +24,7 @@ body{
     background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(252, 250, 250));
 }
 nav{
-    display: flex;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(255, 255, 255);
@@ -238,6 +239,7 @@ nav .resume:hover{
     line-height: 26px;
     font-weight: 400;
     color: var(--secondary-color);
+    margin-right: 90px;
     margin-bottom: 30px;
     opacity: 0;
     animation-name: bu;
@@ -507,26 +509,82 @@ background-color: white;
    height: 300px; 
  }
 
+
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
     .homepage{
         gap: 45px;
-        margin-top: 45px;
+        
+        padding: 45px ;
+
     }
      .middle{
     gap: 0px;
     margin: 0 80px;
  }
- .middle .left h1.show{
+*.middle .left h1.show{
     white-space: nowrap;
  }
   .middle .left{
     gap: 3px;
-    width: 80%;
+    width: 100%;
  }
   .middle .right .circle{
    width: 310px;
    height: 310px; 
  }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .middle .left{
+        width: 100%;
+    }
+    .middle .left h1.show{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .middle p,h1,h2{
+        text-align: center;
+    }
+    .middle .left .btns.show{
+        justify-content: center;
+}
+
+.middle .left p:last-of-type.show{
+    margin-right: 0;
+
+}
+.middle .left h1.show{
+    white-space: nowrap;
+    text-align: start;
+}
+.homepage .scdo{
+    margin-top: 20px;
+}
+nav{
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+nav .name{
+    text-align: center;
+}
+nav li{
+        margin-right: 15px;
+}
+
+
+
 
 }

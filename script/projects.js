@@ -142,12 +142,27 @@ project.tech.forEach(t => {
 
 })
 })
+const gri=document.getElementById("projectcon")
+function applygrid(){
+    if(window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches){
+        projectcon.style.gridTemplateColumns = "repeat(3, 1fr)";
+    }
+    else if(window.matchMedia("(min-width: 1024px) and (max-width: 1440px)").matches){
+          projectcon.style.gridTemplateColumns = "repeat(4, 1fr)";
+    }
+    else{
+        projectcon.style.gridTemplateColumns = "repeat(5, 1fr)";
+    }
+
+}
+
+
 
 allprojects.addEventListener("click",()=>{
     allprojects.classList.add("active")
     featured.classList.remove("active")
      document.getElementById("projectcon").style.display = "grid";
-  document.getElementById("projectcon").style.gridTemplateColumns = "repeat(5, 1fr)";
+     applygrid()
      container.innerHTML = ""; 
     projects.forEach(project=>{
     let techHTML = "";
@@ -185,6 +200,9 @@ project.tech.forEach(t => {
 
 })
 })
+window.addEventListener("resize", applygrid)
+
+
 
 /*const getprojects=(isFeatured)=>{
 let projs=[]

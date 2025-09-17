@@ -3,6 +3,7 @@
 @import url("./about.css");
 body{
     overflow-x: hidden;
+    width: 100%;
 }
 :root{
     --special-color:rgb(113, 113, 130);
@@ -402,4 +403,30 @@ background-color: rgba(94, 88, 88, 0.16);
      .experience{
         padding: 80px 85px;
     }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .experience .head p.show{
+        margin: 0 10%;
+    }
+    .experience .center{
+        flex-direction: column;
+    }
+    .experience .left{
+        width: 100%;
+    }
+    .experience .left .bottom{
+        justify-content: start;
+    }
+    .experience .left .bottom .certification{
+        display: grid;
+        justify-content: start;
+        grid-template-columns: repeat(2,auto);
+    }
+    .experience .right{
+        width: 100%;
+    }
+    .experience .left .top{
+        width: 100%;
+    }
+
 }

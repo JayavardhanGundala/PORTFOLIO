@@ -336,3 +336,17 @@ animation-fill-mode: forwards;
         gap: 25px;
     }
 }
+@media (min-width: 768px) and (max-width: 1024px){
+    .about .abp.show{
+        margin: 0 10%;
+    }
+    .about .center{
+        flex-direction: column;
+    }
+    .about .center .left ,h3{
+        width: 100%;
+    }
+    .about .center .right{
+        width: 100%;
+    }
+}
