@@ -731,12 +731,16 @@ nav li{
     font-size: 30px;
     
 }
-@media (max-width: 350px){
-.middle .left h2.show{
-    font-size: 14px;
-    
-    
-}
-}
 
+
+}
+@media (max-width: 350px){
+    .middle .left h2.show{
+        font-size: 14px;
+    }
+}
+@media (max-width: 350px){
+       .middle .left h2.show{
+        font-size: 12px;
+    } 
 }
