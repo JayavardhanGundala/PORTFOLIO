@@ -650,6 +650,10 @@ nav li{
         padding: 0px 10px 10px 20px ;
 
     }
+    .middle .left h2.show{
+    width: 100%;
+    display: inline-block;
+}
     .middle{
         gap: 0;
     }
@@ -669,8 +673,11 @@ nav li{
     }
     .middle .left p:last-of-type.show{
         font-size: 14px;
-        text-align: start;
+        text-align: center;
         width: 100%;
+        display: block;
+        line-height: 22px;
+        margin-top: 10px;
         
         
     }
@@ -724,5 +731,6 @@ nav li{
     font-size: 30px;
     
 }
+
 
 }
