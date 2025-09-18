@@ -433,3 +433,41 @@ a{
     }
     
 }
+@media (max-width: 768px){
+        .projects .head p.show{
+         width: 100%;
+    }
+    .projects .end.show{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .end h3{
+        align-content: center;
+        text-align: center;
+    }
+    .projects .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+        .projects{
+            padding: 70px 20px;
+    }
+    .projects .container .project.show{
+        width: 100%;
+            gap: 0px;
+    }
+}
+@media (max-width: 500px){
+   .projects .head .m.show{
+    font-size: 35px;
+    
+   }
+   .projects .head .m span{
+    display: inline-block;
+   }
+   .projects .head p.show{
+    font-size: 15px;
+    font-size: 300;
+   }
+}

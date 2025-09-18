@@ -150,6 +150,15 @@ function applygrid(){
     else if(window.matchMedia("(min-width: 1024px) and (max-width: 1440px)").matches){
           projectcon.style.gridTemplateColumns = "repeat(4, 1fr)";
     }
+    else if(window.matchMedia("(max-width: 768px)").matches){
+         projectcon.style.gridTemplateColumns = "repeat(1, 1fr)";
+         projectcon.style.animationDuration="0.5s";
+         projectcon.style.animationDelay="0s";
+        projectcon.style.animationTimingFunction = "ease-in";
+
+    }
+        
+    
     else{
         projectcon.style.gridTemplateColumns = "repeat(5, 1fr)";
     }

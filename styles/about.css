@@ -339,6 +339,7 @@ animation-fill-mode: forwards;
 @media (min-width: 768px) and (max-width: 1024px){
     .about .abp.show{
         margin: 0 10%;
+        width: 100%;
     }
     .about .center{
         flex-direction: column;
@@ -348,5 +349,30 @@ animation-fill-mode: forwards;
     }
     .about .center .right{
         width: 100%;
+    }
+}
+@media (max-width: 768px){
+        .about .abp.show{
+        margin: 0 10%;
+        width: 100%;
+    }
+    .about .center{
+        flex-direction: column;
+    }
+    .about .center .left ,h3{
+        width: 100%;
+    }
+    .about .center .right{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .about{
+            padding: 50px 10px;
+    }
+}
+@media (max-width: 425px){
+    .center .right{
+         grid-template-columns: repeat(1,auto);
     }
 }

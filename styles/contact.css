@@ -442,3 +442,20 @@
     }
     
 }
+@media (max-width: 768px){
+    .contact .head .chp.show{
+        margin: 0 10%;
+    }
+    .contact .center{
+        flex-direction: column;
+    }
+    .contact .center .left{
+        width: 100%;
+    }
+   
+}
+@media (max-width: 500px){
+        .contact {
+            padding: 50px 10px 20px 10px;
+    }
+}

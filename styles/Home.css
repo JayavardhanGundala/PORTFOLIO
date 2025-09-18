@@ -186,7 +186,9 @@ nav .resume:hover{
     width: 65%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
+    
 }
 .middle .left p:nth-child(1).show{
     font-size: 16px;
@@ -586,5 +588,119 @@ nav li{
 
 
 
+
+}
+@media (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .middle .left{
+        width: 100%;
+    }
+    .middle .left h1.show{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        
+    }
+    .middle p,h1,h2{
+        text-align: center;
+    }
+    .middle .left .btns.show{
+        justify-content: center;
+}
+
+.middle .left p:last-of-type.show{
+    margin-right: 0;
+
+}
+.middle .left h1.show{
+    white-space: nowrap;
+    text-align: start;
+}
+.homepage .scdo{
+    margin-top: 20px;
+}
+nav{
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+nav .name{
+    text-align: center;
+}
+nav li{
+        margin-right: 15px;
+}
+
+}
+@media (max-width: 500px){
+        .homepage{
+        gap: 25px;
+        
+        padding: 15px 10px 10px 20px ;
+
+    }
+    .middle{
+        gap: 0;
+    }
+        .middle .left{
+        width: 100%;
+        gap: 0;
+    }
+        .middle p,h1,h2{
+        width: 100%;
+        
+    }
+    .middle .left h1.show{
+        font-size: 40px;
+    }
+    .middle .left h2.show{
+        font-size: 20px;
+    }
+    .middle .left p:last-of-type.show{
+        font-size: 14px;
+        
+        
+    }
+    .middle .right .circle{
+        width: 250px;
+        height: 250px;
+    }
+    .middle .right .circle .roundemoji{
+        width: 60px;
+        height: 60px;
+    }
+    
+
+} 
+@media (max-width: 425px){
+    .middle .left p:last-of-type.show{
+        width: 100%;
+    }
+    .middle .left .btns.show{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .middle .left .btns a{
+        display: block;
+        width: 100%;
+    }
+.middle .left h2.show{
+    font-size: 17px;
+}
+.middle .left p:last-of-type.show{
+    font-size: 13px;
+}
 
 }

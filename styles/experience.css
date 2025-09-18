@@ -430,3 +430,38 @@ background-color: rgba(94, 88, 88, 0.16);
     }
 
 }
+@media (max-width: 768px){
+    .experience .head p.show{
+        margin: 0 10%;
+    }
+    .experience .center{
+        flex-direction: column;
+    }
+    .experience .left{
+        width: 100%;
+    }
+    .experience .left .bottom{
+        justify-content: start;
+    }
+    .experience .left .bottom .certification{
+        display: grid;
+        justify-content: start;
+        grid-template-columns: repeat(2,auto);
+    }
+    .experience .right{
+        width: 100%;
+    }
+    .experience .left .top{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+     .experience{
+        padding: 50px 10px 20px 10px ;
+    }
+        .experience .left .bottom .certification{
+             grid-template-columns: repeat(1,auto);
+        
+    
+        }
+}
