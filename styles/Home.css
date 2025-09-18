@@ -286,7 +286,7 @@ nav .resume:hover{
     transition: ease-in-out;
     transition-duration: 0.2s;
 }
-.middle .left .btns a .sv{
+.middle .left .btns a svg{
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -647,7 +647,7 @@ nav li{
         .homepage{
         gap: 25px;
         
-        padding: 15px 10px 10px 20px ;
+        padding: 0px 10px 10px 20px ;
 
     }
     .middle{
@@ -669,6 +669,8 @@ nav li{
     }
     .middle .left p:last-of-type.show{
         font-size: 14px;
+        text-align: start;
+        width: 100%;
         
         
     }
@@ -679,6 +681,12 @@ nav li{
     .middle .right .circle .roundemoji{
         width: 60px;
         height: 60px;
+    }
+    .middle .left h1.show{
+        margin-bottom: 5px;
+    }
+    .middle .left p:nth-child(1).show{
+        margin-bottom: 0px;
     }
     
 
@@ -693,14 +701,28 @@ nav li{
         
     }
     .middle .left .btns a{
-        display: block;
+        display: inline-flex;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .middle .left .btns a svg{
+        display: block;
+        
     }
 .middle .left h2.show{
     font-size: 17px;
+    
 }
 .middle .left p:last-of-type.show{
     font-size: 13px;
+}
+.middle .left h1.show{
+    padding: 0 10px;
+    font-size: 30px;
+    
 }
 
 }
