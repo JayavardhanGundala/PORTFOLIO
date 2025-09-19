@@ -105,7 +105,7 @@ featured.addEventListener("click",()=>{
     featured.classList.add("active")
       document.getElementById("projectcon").style.display = "grid";
   document.getElementById("projectcon").style.gridTemplateColumns = "repeat(3, 1fr)";
-  applygrid()
+
     container.innerHTML=" "
 projects.filter(p=>p.featured).forEach(project=>{
     let techHTML = "";

@@ -189,6 +189,10 @@ nav .resume:hover{
     justify-content: center;
     gap: 5px;
     
+    
+}
+.middle .left p:nth-child(1){
+    visibility: hidden;
 }
 .middle .left p:nth-child(1).show{
     font-size: 16px;
@@ -198,6 +202,7 @@ nav .resume:hover{
     margin-bottom: 14px;
     margin-left: 8px;
     opacity: 0;
+    visibility: visible;
     animation-name: bu;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -208,7 +213,11 @@ nav .resume:hover{
     
 
 }
+.middle .left h1{
+    visibility: hidden;
+}
 .middle .left h1.show{
+    visibility: visible;
     font-size: 60px;
     font-weight: 400;
     color: black;
@@ -222,7 +231,11 @@ nav .resume:hover{
     animation-direction: normal;
     animation-delay: 0.30s;
 }
+.middle .left h2{
+    visibility: hidden;
+}
 .middle .left h2.show{
+    visibility: visible;
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
@@ -236,7 +249,11 @@ nav .resume:hover{
     animation-delay: 0.50s;
 
 }
+.middle .left p:last-of-type{
+    visibility: hidden;
+}
 .middle .left p:last-of-type.show{
+    visibility: visible;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -251,7 +268,11 @@ nav .resume:hover{
     animation-direction: normal;
     animation-delay: 0.70s;
 }
+.middle .left .btns{
+    visibility: hidden;
+}
 .middle .left .btns.show{
+    visibility: visible;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -699,6 +720,21 @@ nav li{
 
 } 
 @media (max-width: 425px){
+    
+    nav{
+        display: block;
+    
+    }
+    nav .name{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    nav .resume{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
     .middle .left p:last-of-type.show{
         width: 100%;
     }
