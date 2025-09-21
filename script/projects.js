@@ -36,13 +36,13 @@ const projects=[
     
 },
 {id:"p-4",
-    imgsrc:"https://plus.unsplash.com/premium_photo-1681488162344-542e0b7c3378?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title:"Weather Prediction",
-    time:"1 months",
+    imgsrc:"https://www.owebest.ai/files/Blogs/bg_img/84598979a3ea1df3f5dbbda958199c1c/gemini-ai-app.png",
+    title:"Gemini-Bot",
+    time:"1.5 months",
     leavel:"Medium",
-    desc:"Real-time weather prediction app with live temperature, humidity, and forecasts.",
-    tech:["HTML","CSS","JAVASCRIPT","OpenWeather API","FIGMA"],
-    git:"https://github.com/JayavardhanGundala/Weather-prediction",
+    desc:"Gemini Clone: A web-based AI chat application replicating Gemini’s UI and functionality using the Gemini API.",
+    tech:["HTML","css","javascript"," React "," API "],
+    git:"https://github.com/JayavardhanGundala/gemini-bot",
     featured:true
     
 },
