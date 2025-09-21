@@ -43,6 +43,7 @@ const projects=[
     desc:"Gemini Clone: A web-based AI chat application replicating Gemini’s UI and functionality using the Gemini API.",
     tech:["HTML","css","javascript"," React "," API "],
     git:"https://github.com/JayavardhanGundala/gemini-bot",
+    demo:"https://gemini-bot-blue.vercel.app/",
     featured:true
     
 },
