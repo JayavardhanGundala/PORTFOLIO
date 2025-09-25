@@ -71,7 +71,7 @@ project.tech.forEach(t => {
   techHTML += `<span>${t}</span>`;
 });
     container.innerHTML+=`
-    <div class="project" id=${project.id}>
+    <div class="project" id=${project.id} style=" box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.37); border: none;  border-radius: 10px;">
                 <div class="up">
                     <img src=${project.imgsrc} alt="">
                 </div>
@@ -114,7 +114,7 @@ project.tech.forEach(t => {
   techHTML += `<span>${t}</span>`;
 });
     container.innerHTML+=`
-    <div class="project" id=${project.id}>
+    <div class="project" id=${project.id} style=" box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.37); border: none;  border-radius: 10px;">
                 <div class="up">
                     <img src=${project.imgsrc} alt="">
                 </div>
@@ -181,7 +181,7 @@ project.tech.forEach(t => {
   techHTML += `<span>${t}</span>`;
 });
     container.innerHTML+=`
-    <div class="project" id=${project.id}>
+    <div class="project" id=${project.id} style=" box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.37); border: none;  border-radius: 10px;">
                 <div class="up">
                     <img src=${project.imgsrc} alt="">
                 </div>
