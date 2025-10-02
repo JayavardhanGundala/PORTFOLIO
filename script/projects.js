@@ -100,12 +100,21 @@ project.tech.forEach(t => {
             </div>`
 
 })
+function ag(){
+        if(window.matchMedia("(max-width: 1024px)").matches){
+        projectcon.style.gridTemplateColumns = "repeat(1, 1fr)";
+        }
+        else{
+        projectcon.style.gridTemplateColumns = "repeat(3, 1fr)";
+        }
+}
 
 featured.addEventListener("click",()=>{
     allprojects.classList.remove("active")
     featured.classList.add("active")
       document.getElementById("projectcon").style.display = "grid";
   document.getElementById("projectcon").style.gridTemplateColumns = "repeat(3, 1fr)";
+  ag()
 
     container.innerHTML=" "
 projects.filter(p=>p.featured).forEach(project=>{
