@@ -722,7 +722,7 @@ nav li{
 @media (max-width: 425px){
     
     nav{
-        display: block;
+        display: none;
     
     }
     nav .name{
@@ -771,6 +771,10 @@ nav li{
 
 }
 @media (max-width: 350px){
+        nav{
+        display: none;
+    
+    }
     .middle .left h2.show{
         font-size: 14px;
         line-height: 20px;

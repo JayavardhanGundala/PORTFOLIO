@@ -154,6 +154,7 @@ a{
  border: none;
  border-radius: 10px;
  padding: 6px 10px;
+ transition:all  ease-in 0.2s;
 }
 .projects .tbut button svg{
     width: 20px;
@@ -480,5 +481,9 @@ a{
     font-size: 14px;
     gap: 5px;
     width: 100%;
+   }
+   #conrne{
+    display: flex;
+    flex-direction: column;
    }
 }
