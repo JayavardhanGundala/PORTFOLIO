@@ -1,6 +1,6 @@
 let sboxes=document.getElementById("boxes")
 
-const arr=["Frontend Development","React.js & State Management","API Integration","Performance Optimization","Version Control","UI/UX Collaboration","SEO","Animation Libraries","CSS Frameworks","UI/UX","Python","Data Structures ","Sql","Problem Solving"];
+const arr=["Frontend Development","React.js & State Management","API Integration","Version Control (Git)","CSS Frameworks (Bootstrap, Tailwind)","Node.js","Express.js","MongoDB","SQL","CSS Frameworks (Bootstrap, Tailwind)","Python","Data Structures ","Problem Solving"];
 arr.forEach(text=>{
     let t=document.createElement("span")
     t.textContent=text
