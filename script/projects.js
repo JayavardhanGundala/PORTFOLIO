@@ -48,13 +48,14 @@ const projects=[
     
 },
 {id:"p-5",
-    imgsrc:"https://images.unsplash.com/photo-1747081480232-ebde082102ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title:"30-projects ",
-    time:"2 months",
-    leavel:"Hard",
-    desc:"Hands-on challenge to create 30 projects in 30 days, improving problem-solving and frontend expertise.",
-     tech:["HTML","CSS","JAVASCRIPT","FIGMA"],
-     git:"https://github.com/JayavardhanGundala/JayavardhanGundala-30-days-HTML-CSS-JS-vanillaa",
+    imgsrc:"https://images.unsplash.com/photo-1762330472502-83efbe1d4478?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title:"Jwt-Authentication ",
+    time:"1-month",
+    leavel:"medium",
+    desc:"A Node.js and Express backend project demonstrating user authentication (Express,MongoDB)",
+     tech:["React","Node js","Express JS","Tailwind CSS","JWT Authentication"],
+     git:"https://github.com/JayavardhanGundala/Authentication",
+      demo:"https://jayavardhangundalaportfolii.vercel.app/",
 
     featured:false
     
