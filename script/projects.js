@@ -1,13 +1,13 @@
 const projects=[
     {id:"p-1",
-    imgsrc:"https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title:"E commerce Website",
-    time:"2 months",
+    imgsrc:"https://www.peanutsquare.com/wp-content/uploads/2023/04/React.js-CRUD-application-jpg.webp",
+    title:"Crud Application",
+    time:"10 days",
     leavel:"Medium",
-    desc:"Frontend-only e-commerce UI with product listing, cart, checkout flow (UI).",
-    tech:["HTML","CSS","FIGMA"],
-    git:"https://github.com/JayavardhanGundala/e-commerce-website",
-    demo:"https://carashopping-one.vercel.app/",
+    desc:"A simple CRUD application built using the MERN stack that allows users to create, read, update, and delete data with a clean UI and RESTful APIs.",
+    tech:["React","Bootstrap","Node.js","Express.js","MongoDb","Figma"],
+    git:"https://github.com/JayavardhanGundala/CRUD-MERN-stack",
+    demo:"https://crudproject-ys0f.onrender.com/",
     featured:true
 
 },
