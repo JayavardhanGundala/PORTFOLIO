@@ -14,17 +14,17 @@ function progress(bar,target){
 const ts=document.querySelectorAll("#tools span");
 const skills=[
     { id: "skill-1", name: "JavaScript", percentage:80, color:"rgb(250, 206, 45),rgb(227, 172, 43)"},
-    { id: "skill-2", name: "React", percentage:90,color:"rgb(69, 137, 255),rgb(48, 102, 240)"},
+    { id: "skill-2", name: "React", percentage:70,color:"rgb(69, 137, 255),rgb(48, 102, 240)"},
     { id: "skill-3", name: "Node JS", percentage:80 ,color:"rgb(112, 179, 255),rgb(68, 127, 252)"},
     { id: "skill-4", name: "Express JS", percentage:70 ,color:"rgb(35, 222, 129),rgb(27, 179, 85)"},
-    { id: "skill-5", name: "Next.js", percentage:60 ,color:"rgb(40, 209, 119),rgb(54, 153, 245)"},
-    { id: "skill-6", name: "Mongodb", percentage:50 ,color:"rgb(91, 101, 115),rgb(55, 65, 79)"},
-    { id: "skill-7", name: "REST APIs", percentage:50 ,color:"rgb(49, 181, 100),rgb(46, 135, 86)"},
+    { id: "skill-5", name: "TypeScript", percentage:80 ,color:"rgb(40, 209, 119),rgb(54, 153, 245)"},
+    { id: "skill-6", name: "Mongodb", percentage:60 ,color:"rgb(91, 101, 115),rgb(55, 65, 79)"},
+    { id: "skill-7", name: "REST APIs", percentage:90 ,color:"rgb(49, 181, 100),rgb(46, 135, 86)"},
     { id: "skill-8", name: "Tailwind CSS", percentage:80 ,color:"rgb(70, 106, 250),rgb(158, 52, 250)"},
     { id: "skill-9", name: "Bootstrap", percentage:70 ,color:"rgb(255, 156, 56),rgb(252, 94, 91)"},
     { id: "skill-10", name: "SQL", percentage:80 ,color:"rgb(237, 111, 199),rgb(172, 65, 242)"},
-    { id: "skill-11", name: "Python", percentage:50 ,color:"rgb(69, 153, 255),rgb(45, 197, 227)"},
-    { id: "skill-12", name: "Java", percentage:50 ,color:"rgb(255, 126, 28),rgb(245, 185, 47)"}
+    { id: "skill-11", name: "Python", percentage:70 ,color:"rgb(69, 153, 255),rgb(45, 197, 227)"},
+    { id: "skill-12", name: "NextJs", percentage:40 ,color:"rgb(255, 126, 28),rgb(245, 185, 47)"}
 ]
 skills.forEach(skill=>{
     const sc=document.getElementById("con")
