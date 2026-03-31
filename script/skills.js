@@ -57,9 +57,9 @@ skills.forEach(skill => {
     observerr.observe(bar);
 });
 const tools = [
-    "VS Code", "GitHub", "Bootstrap", "LambdaTest", "Jest", "Postman", 
-    "Chrome DevTools ", "Vite", "ImageOptim", "Material UI", "Linux",
-    "GSAP ", "npm", "Accessibility Tools (a11y)", "Figma"
+    "VS Code", "Git", "Postman", 
+    "Chrome DevTools ", "Vite", "Material UI", "Linux",
+    "GSAP ", "npm", "Accessibility Tools (a11y)", "Figma","Pip","Vercel"
   ];
 const soft_skills = [
      "Problem Solving", "Team Leadership", "Effective Communication", 
